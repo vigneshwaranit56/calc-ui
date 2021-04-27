@@ -1,3 +1,7 @@
+# install React on windows
+
+https://www.liquidweb.com/kb/install-react-js-windows/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
