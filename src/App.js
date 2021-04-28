@@ -1,9 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import ClearHistoryScreen from './ClearHistoryScreen.js'
 
 function App() {
   return (
-    <div
+<ClearHistoryScreen />
+  );
+}
+
+export default App;
+
+
+/*
+<div
     className="App"
     >
       <header
@@ -17,7 +26,4 @@ function App() {
         </p>
       </header>
     </div>
-  );
-}
-
-export default App;
+*/
