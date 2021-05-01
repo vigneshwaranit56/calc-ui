@@ -13,6 +13,27 @@
   }
 }
 
+::-webkit-scrollbar{
+  width: 25px;
+}
+::-webkit-scrollbar-track{
+  width: 57px;
+  height: 1024px;
+  background: linear-gradient(180deg, #B2BAFD 0%, rgba(255, 255, 255, 0.21) 23.44%, #C5D5FF 47.92%, rgba(255, 255, 255, 0.21) 75.52%, #C5D5FF 100%);
+  border: 1px solid #3B0DF1;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, #D0FFDB 0%, #86959D 100%);
+  border: 1px solid #2C1275;
+  box-sizing: border-box;
+  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+
+  
+}
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

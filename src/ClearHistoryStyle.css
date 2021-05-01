@@ -1,5 +1,3 @@
-
-
 body
 {
   background-image: url("background.png");
@@ -13,7 +11,10 @@ body
   height: 550px;
   width: 386px;
   margin: 50px auto;
-  border: #000000;
+  position: relative;
+  border: 1px solid #544c69;
+  box-sizing: border-box;
+  left:250px;
   
 }
 
@@ -36,6 +37,8 @@ button{
   box-sizing: border-box;
   box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
-  bottom: 75px;
-  right: 600px;
+  bottom: 20px;
+  left: 100px;
 } 
+
+
