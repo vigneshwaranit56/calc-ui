@@ -1,11 +1,14 @@
 import React from 'react';
 import './CalculationList.css';
-import {Scrollbars} from 'react-custom-scrollbars';
+
+
 
 
 class CalculationList extends React.Component{
+       
+     
    
-    render(){
+    render() {
         function NumberList(props) 
            {
             const numbers = props.numbers;
@@ -54,12 +57,124 @@ class CalculationList extends React.Component{
            
             <ul>
             <div id ="models">
-              
-             <NumberList numbers={models}> </NumberList>
+              </div>
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+               
             </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+               
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+               
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+               
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+               
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+              
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">-6-100 mul 600</span>
+                
+            </div>
+            </div>
+
             </ul>
           );
     }
 
-}
+  }
+
+
 export default CalculationList;
