@@ -9,16 +9,15 @@ class ClearHistoryScreen extends React.Component{
  
        render() {
             return(
-                     <div className='App'>
-                         
-                              <div id='d1'>
-                                <div>
-                              <CalculationList> </CalculationList>
-                              </div>
-                              </div>
-                                  <button type="reset">ClearHistory</button>
-                                  
-                              </div>
+              <div>
+                     <div className='container'>
+                     <CalculationList> </CalculationList>
+                     </div>
+
+                     <button type="reset">ClearHistory</button>
+                     </div>
+                     
+                     
                               
                
             );  
