@@ -15,8 +15,6 @@ body{
     padding: 1px;
     max-width: 200px;
     width: 100%;
-   
-    
 }
 
 
@@ -31,15 +29,15 @@ body{
      border: 1px solid #3c2d663d;
      padding:1px 6px;
      margin-bottom: 4px;
-    
-
      align-items: center;
+     justify-content: space-between;
+     
      
 
 }
+.wrapper .item i{
+     cursor: pointer;
+     color: rgb(209, 62, 36);
 
- .Delete{
-     background-image: url('./outline_delete_outline_black_24dp.png');
-     width: 20px;
 
-     }
+}

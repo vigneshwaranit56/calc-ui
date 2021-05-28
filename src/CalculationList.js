@@ -24,6 +24,7 @@ class CalculationList extends React.Component{
             
               <div>
                 {listItems}
+               
               </div>
               
             );
@@ -61,114 +62,115 @@ class CalculationList extends React.Component{
             <div class="wrapper">
               <div class ="item">
                 <span class="text">100 + 50 = 150</span>
-                <div class ="Delete"></div>
                 
-                
+                <i class="fa fa-trash"></i>
+             
+               
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class ="item">
+                <span class="text">100 + 50 = 150</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
                 <span class="text">100 + 50 = 150</span>
-               
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
                 <span class="text">100 + 50 = 150</span>
-                
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">100 + 50 = 150</span>
-                
+                <span class="text">100  -  6  =  94</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">100-6  = 94</span>
-               
+                <span class="text">100  -  6  =  94</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">100-6  = 94</span>
-                
+                <span class="text">100  -  6  =  94</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">100-6  = 94</span>
-               
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100-6  = 94</span>
-                
+                <span class="text">100  -  6  =  94</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
                 <span class="text">-6 * -100  = 600</span>
-               
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
                 <span class="text">-6 * -100  = 600</span>
-                
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
                 <span class="text">-6 * -100  = 600</span>
-              
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
                 <span class="text">-6 * -100  = 600</span>
-                
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">6 / 100  = 16.6666667</span>
-                
+                <span class="text"> 6 / 100  =  16.6666667</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">6 / 100  = 16.6666667</span>
-                
+                <span class="text"> 6 / 100  =  16.6666667</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">6 / 100  = 16.6666667</span>
-                
+                <span class="text"> 6 / 100  =  16.6666667</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
             <div class="wrapper">
               <div class ="item">
-                <span class="text">6 / 100  = 16.6666667</span>
-                
+                <span class="text"> 6 / 100  =  16.6666667</span>
+                <i class="fa fa-trash"></i>
             </div>
             </div>
 
