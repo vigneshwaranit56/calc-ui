@@ -15,28 +15,31 @@ body{
     padding: 1px;
     max-width: 200px;
     width: 100%;
-    border-radius: 3px;
+   
+    
 }
 
 
 
 .wrapper .item{
-     /* background: linear-gradient(180deg, #fdfdfd3a 0%, #86959d6b 100%); */
-     /* border: 1px solid #9f99b13d; */
-     background-color: #ffffff;
-     color: black;
+    
+      
+     background-color: rgba(133, 125, 125, 0.199);
+     color: rgb(0, 0, 0);
      display: flex;
-     width:350px;
-     border-radius: 10px;
-     padding:2px 7px;
-     margin-bottom: 5px;
-    justify-content: space-between;
+     width:360px;
+     border: 1px solid #3c2d663d;
+     padding:1px 6px;
+     margin-bottom: 4px;
+    
+
      align-items: center;
      
 
 }
-.wrapper .item img{
-     
-     
-}
 
+ .Delete{
+     background-image: url('./outline_delete_outline_black_24dp.png');
+     width: 20px;
+
+     }
