@@ -20,8 +20,6 @@ body{
 
 
 .wrapper .item{
-    
-      
      background-color: rgba(133, 125, 125, 0.199);
      color: rgb(0, 0, 0);
      display: flex;
@@ -31,13 +29,10 @@ body{
      margin-bottom: 4px;
      align-items: center;
      justify-content: space-between;
-     
-     
-
 }
-.wrapper .item i{
+
+
+.wrapper .item i {
      cursor: pointer;
      color: rgb(209, 62, 36);
-
-
 }

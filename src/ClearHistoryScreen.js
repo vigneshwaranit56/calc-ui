@@ -7,9 +7,9 @@ import './CalculationList.css';
 
 
 
+
 class ClearHistoryScreen extends React.Component{
-      
-      
+
        render() {
             return(
               <div>
@@ -17,7 +17,11 @@ class ClearHistoryScreen extends React.Component{
                      <CalculationList> </CalculationList>
                      </div>
                      <button type="reset">ClearHistory</button>
+                     
+                     
+                     
                      </div>
+
                      
                      
                               

@@ -6,18 +6,49 @@ import './CalculationList.css';
 
 class CalculationList extends React.Component{
        
-     
-   
+  
     render() {
+      
+      function convertoperation(operation){
+        var val;
+      switch(operation) {
+
+        
+        case 'mul':
+        val = '*';
+          break;
+        case 'div':
+          val = '/'  ;
+          break;
+        case 'add':
+          val = '+'
+          break;
+        case 'sub':
+          val = '-'
+          break;
+        default:
+          val = null;
+}
+return val;
+}
+  
         function NumberList(props) 
            {
             const numbers = props.numbers;
             console.log(numbers);
            const listItems = numbers.map((model) =>
               
-              <li key={model.id}>
-                        {model.operand1+" "+model.operand2+" "+model.operation+" "+model.answer}
-                             </li>
+              <ul key={model.id}class="models">
+                        
+                        <div class="wrapper">
+                        <div class ="item">
+                          <span class="text"> {model.operand1} {convertoperation(model.operation)} {model.operand2}  =  {model.answer}</span>
+                          <i onClick = {props.delEvent} class="fa fa-trash"></i>
+                         </div>
+                        
+                        </div>
+                        
+                             </ul>
             );
             
             return (
@@ -30,7 +61,7 @@ class CalculationList extends React.Component{
             );
           }
           
-          const models=[{"id": 1, "operand1": -6.0, "operand2": -100.0, "operation": "mul", "answer": 600.0}, 
+          var models=[{"id": 1, "operand1": -6.0, "operand2": -100.0, "operation": "mul", "answer": 600.0}, 
                         {"id": 2, "operand1": -6.0, "operand2": -100.0, "operation": "mul", "answer": 600.0}, 
                         {"id": 3, "operand1": -6.0, "operand2": -100.0, "operation": "mul", "answer": 600.0}, 
                         {"id": 4, "operand1": -6.0, "operand2": -100.0, "operation": "mul", "answer": 600.0}, 
@@ -56,125 +87,11 @@ class CalculationList extends React.Component{
          
           return(
            
-            <ul>
-            <div id ="models">
-              </div>
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100 + 50 = 150</span>
-                
-                <i class="fa fa-trash"></i>
-             
-               
-              </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100 + 50 = 150</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100 + 50 = 150</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100 + 50 = 150</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100  -  6  =  94</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100  -  6  =  94</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100  -  6  =  94</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">100  -  6  =  94</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">-6 * -100  = 600</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">-6 * -100  = 600</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">-6 * -100  = 600</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text">-6 * -100  = 600</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text"> 6 / 100  =  16.6666667</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text"> 6 / 100  =  16.6666667</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text"> 6 / 100  =  16.6666667</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            <div class="wrapper">
-              <div class ="item">
-                <span class="text"> 6 / 100  =  16.6666667</span>
-                <i class="fa fa-trash"></i>
-            </div>
-            </div>
-
-            </ul>
+            <div>
+            <NumberList numbers={models}>
+                  
+            </NumberList>
+        </div>
           );
     }
 

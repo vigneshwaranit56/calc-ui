@@ -14,7 +14,7 @@ body
   margin: 50px auto;
   position: relative;
   box-sizing: border-box;
-  left:300px;
+  left:400px;
   overflow:hidden;
   overflow-y: scroll;
   
@@ -43,10 +43,10 @@ button {
     mix-blend-mode: normal;
     border: #C5D5FF;
     box-sizing: border-box;
-    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.25);
     position: absolute;
-    bottom: 53.5px;
-    left: 870px;
+    bottom: 40px;
+    left: 990px;
   } 
 
 
