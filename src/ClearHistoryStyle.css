@@ -27,29 +27,38 @@ body
   width: 200px;
   }
 
-button {
-    width: 180px;
+  button {
+  
+    padding:5px 5px;
+    position: relative;
+    width: 160px;
     height: 45px;
-    border-radius: 10px;
+    left: 1000px;
+    bottom: 65px;
+    background: linear-gradient(180deg, #aeeff8a2 0%, #8da6ca 100%);
+    box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 10px;
     text-align: center;
     color: #000000;
-    background: linear-gradient(180deg, #D0FFDB 0%, #86959D 100%);
-    mix-blend-mode: normal;
-    border: #C5D5FF;
-    box-sizing: border-box;
-    box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    bottom: 40px;
-    left: 990px;
-  } 
+    border-radius: 5px;
+   }
 
 
+.fa-arrow-alt-circle-left{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+  bottom: 620px;
+  left: 20px;
+  
+}
 
 
 

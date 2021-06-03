@@ -2,11 +2,7 @@ import React  from 'react';
 import './ClearHistoryStyle.css';
 import CalculationList from './CalculationList.js';
 import './CalculationList.css';
-
-
-
-
-
+import ClearHistoryfunc from './ClearHistoryfunc.js';
 
 class ClearHistoryScreen extends React.Component{
 
@@ -16,19 +12,20 @@ class ClearHistoryScreen extends React.Component{
                      <div className='container'>
                      <CalculationList> </CalculationList>
                      </div>
-                     <button type="reset">ClearHistory</button>
-                     
-                     
+                     <button>ClearHistory</button>
+                     <ClearHistoryfunc></ClearHistoryfunc>
+                     <div>
+                      <i class="fas fa-arrow-alt-circle-left"></i>
+                     </div>
                      
                      </div>
-
-                     
-                     
-                              
-               
-            );  
+                     )
+                
         }
-}
+      
+        
+};
+
 
 
 export default ClearHistoryScreen;

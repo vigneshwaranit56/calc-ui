@@ -23,6 +23,7 @@ body{
      background-color: rgba(133, 125, 125, 0.199);
      color: rgb(0, 0, 0);
      display: flex;
+     font-family: Rockwell;
      width:360px;
      border: 1px solid #3c2d663d;
      padding:1px 6px;
