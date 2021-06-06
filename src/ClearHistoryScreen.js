@@ -2,6 +2,8 @@ import React  from 'react';
 import './ClearHistoryStyle.css';
 import CalculationList from './CalculationList.js';
 import './CalculationList.css';
+import calci from './calci.js';
+import './calci.css';
 
 
 class ClearHistoryScreen extends React.Component{
