@@ -1,10 +1,11 @@
 import React  from 'react';
-import './calci.css';
+import './maindisplay.css';
 
 
 
 
-class ClearHistoryScreen extends React.Component{
+
+class maindisplay extends React.Component{
 
        render() {
             return(
@@ -53,4 +54,4 @@ class ClearHistoryScreen extends React.Component{
 
 
 
-export default ClearHistoryScreen;
+export default maindisplay;
