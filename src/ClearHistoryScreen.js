@@ -19,7 +19,7 @@ class ClearHistoryScreen extends React.Component{
                      <div>
                       <i class="fas fa-arrow-alt-circle-left"></i>
                      </div>
-                   <div> <Maindisplay/></div>
+                
                      </div>
                      
                      )
