@@ -1,9 +1,9 @@
 import React from 'react';
 import './Merge.css';
-import ResultComponent from './ResultComponent';
-import Mainscreen from './Display';
+import Result from './Result';
+import Display from './Display';
 
-class Merge extends Components {
+class Merge extends React.Component {
     constructor(){
         super();
 
@@ -18,11 +18,13 @@ class Merge extends Components {
             this.calculate()
         }
 
-        else if(button === "C"){
+        else if(button === "AC"){
             this.reset()
         }
-        else if(button === "CE"){
+        else if(button === "CorrectDelete"){
             this.backspace()
+
+        
         }
 
         else {
@@ -69,20 +71,16 @@ class Merge extends Components {
     };
 
     render() {
-        return (
+            return (
             <div>
-                <div className="calculator">
-                    <div className="calculatorbuttons">
-                       <div className="Display">
-                           <div className="InnerDislay">
-                    <Resultcomponent result={this.state.result}/>
+               
+                    <Result  result={this.state.result}/>
                     <Display onClick={this.onClick}/>
                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        );
+                       
+                    
+                
+            );
     }
 }
 

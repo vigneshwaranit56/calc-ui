@@ -1,17 +1,17 @@
 import React from 'react';
-import './Merge.css';
 
-class Resultcomponent extends React.Component {
+
+class Result extends React.Component {
 
 
     render() {
             let {result} = this.props;
             return (
-                <div className="result">
+                <div class="result">
                     <p>{result}</p>
                 </div>
             );
     
     }
 }
-export default Resultcomponent;
+export default Result;
