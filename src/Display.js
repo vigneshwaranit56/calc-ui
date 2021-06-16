@@ -7,7 +7,7 @@ class Display extends  React.Component {
     
     return(
       
-    
+      <div class="Background">
      <div class="Calculator">
       <button name="Check" onClick={e => this.props.onClick(e.target.name)} class="Check">Check</button>
       <button name="CorrectDelete" onClick={e => this.props.onClick(e.target.name)}class="CorrectDelete">CorrectDelete</button>
@@ -40,7 +40,9 @@ class Display extends  React.Component {
         <button name="%" onClick={e => this.props.onClick(e.target.name)} class="button">%</button>
      </div>
 
-    
+     
+
+      </div>
 
      </div>
 
