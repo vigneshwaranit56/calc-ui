@@ -1,7 +1,7 @@
 import React from 'react';
 import './Merge.css';
 import ResultComponent from './ResultComponent';
-import Mainscreen from "./Mainscreen";
+import Mainscreen from './Display';
 
 class Merge extends Components {
     constructor(){
@@ -75,8 +75,8 @@ class Merge extends Components {
                     <div className="calculatorbuttons">
                        <div className="Display">
                            <div className="InnerDislay">
-                    <ResultComponent result={this.state.result}/>
-                    <Mainscreen onClick={this.onClick}/>
+                    <Resultcomponent result={this.state.result}/>
+                    <Display onClick={this.onClick}/>
                            </div>
                        </div>
                     </div>

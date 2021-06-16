@@ -1,7 +1,7 @@
 import React from 'react';
 import './Merge.css';
 
-class ResultComponent extends React.Component {
+class Resultcomponent extends React.Component {
 
 
     render() {
@@ -14,4 +14,4 @@ class ResultComponent extends React.Component {
     
     }
 }
-export default ResultComponent;
+export default Resultcomponent;

@@ -2,7 +2,7 @@ import React from 'react';
 import './Merge.css';
 
 
-class Mainscreen extends  React.Component {
+class Display extends  React.Component {
   render(){
     
     return(
@@ -53,4 +53,4 @@ class Mainscreen extends  React.Component {
      
 }
 
-export default Mainscreen; 
+export default Display; 
