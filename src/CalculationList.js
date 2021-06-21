@@ -7,8 +7,29 @@ import './CalculationList.css';
 class CalculationList extends React.Component{
        
   
-    render() {
-      
+    render() 
+    {
+      let array = [];
+console.log(typeof this.props.numbers );
+console.log(this.props.numbers);
+console.log(this.props.numbers );
+
+// console.log(props.numbers.length())
+if(this.props.numbers != null){
+for(let i = 0; i < this.props.numbers.length; i++) {
+  array.push(
+    // <Item key={this.props.numbers[i].id} item={
+    <div class="wrapper">
+              <div class ="item">
+                <span class="text"> {this.props.numbers[i].operand1} {convert(this.props.numbers[i].operation)} {this.props.numbers[i].operand2}  =  {this.props.numbers[i].answer}</span>
+                <i onClick = {this.props.delEvent} class="fa fa-trash"></i>
+              </div>
+             
+            </div>
+            // } />
+  );
+}
+}
       function convert(operation){
         var val;
       switch(operation) {
@@ -32,39 +53,31 @@ class CalculationList extends React.Component{
 return val;
 }
   
-        function NumberList(props) 
-           {
-            const numbers = props.numbers;
-            console.log(numbers);
-           const listItems = numbers.map((model) =>
-              
-              <ul key={model.id}class="models">
-                        
-                        <div class="wrapper">
-                        <div class ="item">
-                          <span class="text"> {model.operand1} {convert(model.operation)} {model.operand2}  =  {model.answer}</span>
-                          <i onClick = {props.delEvent} class="fa fa-trash"></i>
-                         </div>
-                        
-                        </div>
-                        
-                             </ul>
-            );
-            
-            return (
-            
-              <div>
-                {listItems}
-               
-              </div>
-              
-            );
-          }
-          console.log("log data"+this.props.data);
-          
+ /*
+  alternate solution
+
+//  const numbers = props.numbers;
+//  console.log(numbers);
+//  const listItems = numbers.map((model) =>
+   
+//    <ul key={model.id}class="models">
+             
+//              <div class="wrapper">
+//              <div class ="item">
+//                <span class="text"> {model.operand1} {convert(model.operation)} {model.operand2}  =  {model.answer}</span>
+//                <i onClick = {props.delEvent} class="fa fa-trash"></i>
+//               </div>
+             
+//              </div>
+             
+//                   </ul>
+ 
+ 
+
+*/
+   
           return(
-                
-           <div></div>
+                <div>{array}</div>
           );
     }
 
