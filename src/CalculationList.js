@@ -10,9 +10,7 @@ class CalculationList extends React.Component{
     render() 
     {
       let array = [];
-console.log(typeof this.props.numbers );
-console.log(this.props.numbers);
-console.log(this.props.numbers );
+
 
 // console.log(props.numbers.length())
 if(this.props.numbers != null){
