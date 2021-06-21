@@ -1,10 +1,7 @@
 import React  from 'react';
 import './ClearHistoryStyle.css';
-import CalculationList from './CalculationList.js';
-import './CalculationList.css';
 
-
-
+import Get from './component/get'
 
 class ClearHistoryScreen extends React.Component{
 
@@ -12,7 +9,7 @@ class ClearHistoryScreen extends React.Component{
             return(
               <div>
                      <div className='container'>
-                     <CalculationList> </CalculationList>
+                     <Get> </Get>
                      </div>
                      <button>ClearHistory</button>
                    
