@@ -19,8 +19,7 @@ class Get extends Component
       const data = await response.json();
       console.log(typeof data);
       /*
-commenting below line without string fy
-     
+      commenting below line to ignore stringfy
       const myObjStr = JSON.stringify(data);
     */
        this.setState({data: data, loading: false });
