@@ -1,9 +1,6 @@
 import React from 'react';
 import './CalculationList.css';
 
-
-
-
 class CalculationList extends React.Component{
        
   
