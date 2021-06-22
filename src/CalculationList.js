@@ -20,7 +20,7 @@ for(let i = 0; i < this.props.numbers.length; i++) {
     <div class="wrapper">
               <div class ="item">
                 <span class="text"> {this.props.numbers[i].operand1} {convert(this.props.numbers[i].operation)} {this.props.numbers[i].operand2}  =  {this.props.numbers[i].answer}</span>
-                <i onClick = {this.props.delEvent} class="fa fa-trash"></i>
+               <i onClick = {()=>this.props.onDelete(this.props.numbers[i].id)} class="fa fa-trash" ></i>
               </div>
              
             </div>

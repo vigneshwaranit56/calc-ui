@@ -11,6 +11,11 @@ class Get extends Component
           data: null
           };
 
+          constructor(props) {
+            super(props)
+            this.deletebyid = this.deletebyid.bind(this)
+        }
+
       async componentDidMount(){
       const url ="https://calculate-application-django.herokuapp.com/api/calculation";
       const response = await fetch(url);
@@ -25,6 +30,36 @@ class Get extends Component
        this.setState({data: data, loading: false });
 
    }
+
+    deletebyid(id){
+    
+
+
+    const items = this.state.data.filter(model => model.id !== id);
+    console.log(items);
+
+    this.setState({data: items, loading: false });
+
+
+
+        console.log(JSON.stringify(id))
+        let url="https://calculate-application-django.herokuapp.com/api/calculation/"+id;
+
+        fetch(url,{
+         method:'DELETE',
+         header: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json',
+         },
+
+
+       }).then((result) => {
+        console.warn("resp",result.status)
+        
+       })
+
+    
+  }
 
 
 render() 
@@ -118,9 +153,10 @@ for(let i = 0; i < props.numbers.length; i++) {
  );
 
 }*/
+
 return (
 
- (this.state.loading ) || (!this.state.data) ? (<CalculationList />) : ( <CalculationList numbers = { this.state.data} />)
+ (this.state.loading ) || (!this.state.data) ? (<CalculationList />) : ( <CalculationList numbers = { this.state.data} onDelete ={this.deletebyid}/>)
   
   );
 
