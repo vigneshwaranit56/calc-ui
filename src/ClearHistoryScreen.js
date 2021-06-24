@@ -33,8 +33,6 @@ class ClearHistoryScreen extends React.Component{
 
 deletebyid(id){
 
-
-
 const items = this.state.data.filter(model => model.id !== id);
 console.log(items);
 
