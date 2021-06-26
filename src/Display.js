@@ -4,8 +4,10 @@ import React from 'react';
 
 class Display extends  React.Component {
   render(){
-    
+    let {result} = this.props;
     return(
+
+     
       
       <div class="Background">
      <div class="Calculator">
@@ -39,12 +41,11 @@ class Display extends  React.Component {
         <button name="+" onClick={e => this.props.onClick(e.target.name)} class="button">+</button>
         <button name="%" onClick={e => this.props.onClick(e.target.name)} class="button">%</button>
      </div>
-
-     
-
-      </div>
-
-     </div>
+</div>
+     <div class="result">
+                    <p>{result}</p>
+               </div>
+        </div>
 
      
         

@@ -21,7 +21,7 @@
   background: linear-gradient(180deg, #1854EF 25%, #C5D5FF 50.52%, #1B5AFB 75.08%);
   border: 1px solid #8a72cc;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 30px;
   }
   
 
@@ -148,6 +148,17 @@ font-size:20px ;
     transform: translateY(4px);
 }
 
-
+.result {
+  background: linear-gradient(180deg, #6FF08B 0%, rgba(208, 255, 219, 0.78) 51.56%, #6FF08B 100%);
+  border: 6px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  
+  width:320px;
+  height: 80px;
+  left: 146px;
+  top:60px;
+}
 
 
