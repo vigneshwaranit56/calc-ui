@@ -19,7 +19,6 @@ class ClearHistoryScreen extends React.Component{
   async componentDidMount(){
   const url ="https://calculate-application-django.herokuapp.com/api/calculation";
   const response = await fetch(url);
-  console.log(this.state.data)
 
   const data = await response.json();
   console.log(typeof data);
@@ -64,6 +63,7 @@ this.setState({data: items, loading: false });
          console.log(items);
          
          this.setState({data: items, loading: false });
+         
            let url="https://calculate-application-django.herokuapp.com/api/calculation";
            fetch(url,{
             method:'DELETE',
