@@ -1,0 +1,9 @@
+.Background{
+    background: url('./background.png');
+    position: absolute;
+    width:100%;
+    height: 100%;
+    border: 1px solid #8a72cc;
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }

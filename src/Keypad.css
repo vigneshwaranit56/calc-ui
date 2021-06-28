@@ -1,0 +1,24 @@
+/* .Keypad {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80%;
+} */
+
+.Keypad{
+    top: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+    font-family: Rockwell;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  font-size:30px ;
+}
+
+.Keypad[data-size="1"] {
+    grid-template-columns: 2fr 2fr 1fr;
+}
+

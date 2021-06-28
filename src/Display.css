@@ -1,0 +1,18 @@
+.Display {
+    background: linear-gradient(180deg, #6FF08B 0%, rgba(208, 255, 219, 0.78) 51.56%, #6FF08B 100%);
+    border: 6px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    align-items: right;
+    justify-content: right;
+    width:90%;
+    height: 15%;
+    left: 5%;
+    top:10%;
+  }
+
+  .Result{
+      font-size: x-large;
+  }
+  

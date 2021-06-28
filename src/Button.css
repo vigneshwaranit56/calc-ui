@@ -1,0 +1,68 @@
+.Button {
+    background: #cad2c5;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    height: 20%;
+    min-width: 25%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-image-source: linear-gradient(180deg, hsl(138, 91%, 46%) 0%, rgb(210, 15, 73) 100%);
+    font-size:20px;
+    height: auto;
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25); 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.25);
+    border: 3px solid #111111; 
+
+    /* position: relative;
+        display: flex;
+        font-size:20px;
+        border-color: hsl(152, 95%, 48%);
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 5px;
+        background: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        border-image-source: linear-gradient(180deg, hsl(138, 91%, 46%) 0%, rgb(210, 15, 73) 100%);
+        -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+       -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25); 
+       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.25);
+        bottom:-80px;
+        border: 3px solid rgb(221, 213, 213); 
+        */
+
+}
+
+.Button[data-size="1"] {
+    font-size: 16px;
+
+    background: #0DFF16;
+}
+
+.Button[data-size="2"] {
+    background: #EC3232;
+}
+.Button[data-size="3"] {
+    background: #EC3232;
+}
+
+.Button[data-value="null"] {
+    pointer-events: none;
+}
+
+.Button:hover {
+    background: #d7ddd3;
+    cursor: default;
+}
+.Button:active{
+background-color: whitesmoke;
+box-shadow: 0 3px #666;
+transform: translateY(4px);
+}

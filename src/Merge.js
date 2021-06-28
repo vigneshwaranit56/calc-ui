@@ -1,7 +1,7 @@
 import React from 'react';
 import './Merge.css';
 import Result from './Result';
-import Display from './Display';
+import CombinedScreen from './CombinedScreen.js';
 
 class Merge extends React.Component {
     constructor(){
@@ -75,7 +75,7 @@ class Merge extends React.Component {
             <div>
                
                     <Result  result={this.state.result}/>
-                    <Display onClick={this.onClick}/>
+                    <CombinedScreen onClick={this.onClick}/>
                            </div>
                        
                     

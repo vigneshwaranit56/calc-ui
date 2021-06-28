@@ -1,86 +1,23 @@
 import React from 'react';
-import Result from './Result';
-
-class Mainscreen extends  React.Component {
-
-    
-  constructor(){
-    super();
-
-    this.state = {
-        result: ""
-    }
-}
-
-onClick = button => {
-
-    if(button === "="){
-        this.calculate()
-    }
-
-    else if(button === "AC"){
-        this.reset()
-    }
-    else if(button === "Delete"){
-        this.backspace()
-    }
-
-    else {
-        this.setState({
-            result: this.state.result + button
-        })
-    }
-};
 
 
-calculate = () => {
-    var checkResult = ''
-    if(this.state.result.includes('--')){
-        checkResult = this.state.result.replace('--','+')
-    }
 
-    else {
-        checkResult = this.state.result
-    }
-   try {
-        this.setState({
-            result: (eval(checkResult) || "" ) + ""
-        })
-    } catch (e) {
-        this.setState({
-            result: "error"
-        })
-
-    }
-};
-
-reset = () => {
-    this.setState({
-        result: ""
-    })
-};
-
-backspace = () => {
-    this.setState({
-        result: this.state.result.slice(0, -1)
-    })
-};
-   render(){
+class CombinedScreen extends  React.Component {
+  render(){
+    let {result} = this.props;
     return(
-     <div class="calculator">
-         <div className="Display">
-             <Result result={this.state.result}/>
-             <Mainscreen onClick={this.onClick}/>
-          </div>
-      <button name="Check" onClick={e => this.props.onClick(e.target.name)} class="CheckDelete">Check</button>
+
+     
       
+      <div class="Background">
+     <div class="Calculator">
+      <button name="Check" onClick={e => this.props.onClick(e.target.name)} class="Check">Check</button>
       <button name="CorrectDelete" onClick={e => this.props.onClick(e.target.name)}class="CorrectDelete">CorrectDelete</button>
 
-        <button name="AutoReplay" onClick={e => this.props.onClick(e.target.name)} class="AutoReplay">AutoReplay</button>
-       
+      <button name="AutoReplay" onClick={e => this.props.onClick(e.target.name)} class="AutoReplay">AutoReplay</button>
 
       <div class="calculatorbuttons">
-        <button name="1" onClick={e => this.props.onClick(e.target.name)} class="button">1</button>
+      <button name="1" onClick={e => this.props.onClick(e.target.name)} class="button">1</button>
         <button  name="2"onClick={e => this.props.onClick(e.target.name)} class="button">2</button>
         <button name="3"onClick={e => this.props.onClick(e.target.name)} class="button">3</button>
         <button name="/" onClick={e => this.props.onClick(e.target.name)} class="button">/</button>
@@ -103,16 +40,25 @@ backspace = () => {
         <button name="." onClick={e => this.props.onClick(e.target.name)} class="button">.</button>
         <button name="+" onClick={e => this.props.onClick(e.target.name)} class="button">+</button>
         <button name="%" onClick={e => this.props.onClick(e.target.name)} class="button">%</button>
-      </div>
+     </div>
+</div>
+     <div class="result">
+                    <p>{result}</p>
+               </div>
+        </div>
+
      
-          
-      
+        
+
+        
          
-    </div>
+             
+         
+   
     )
 
     }         
      
 }
 
-export default Mainscreen; 
+export default CombinedScreen; 
