@@ -1,18 +1,13 @@
 import React from 'react';
 import './CalculationList.css';
 
-
-
-
 class CalculationList extends React.Component{
        
   
     render() 
     {
       let array = [];
-console.log(typeof this.props.numbers );
-console.log(this.props.numbers);
-console.log(this.props.numbers );
+
 
 // console.log(props.numbers.length())
 if(this.props.numbers != null){
@@ -22,7 +17,7 @@ for(let i = 0; i < this.props.numbers.length; i++) {
     <div class="wrapper">
               <div class ="item">
                 <span class="text"> {this.props.numbers[i].operand1} {convert(this.props.numbers[i].operation)} {this.props.numbers[i].operand2}  =  {this.props.numbers[i].answer}</span>
-                <i onClick = {this.props.delEvent} class="fa fa-trash"></i>
+               <i onClick = {()=>this.props.onDelete(this.props.numbers[i].id)} class="fa fa-trash" ></i>
               </div>
              
             </div>

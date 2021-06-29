@@ -1,5 +1,8 @@
 import React from 'react';
-import ClearHistoryScreen from './ClearHistoryScreen.js';
+// import ClearHistoryScreen from './ClearHistoryScreen.js';
+//import Mainscreen from './MainScreen';
+import CalculatorScreen from './CalculatorScreen';
+// import Merge from './Merge.js';
 
 
 
@@ -8,8 +11,7 @@ import ClearHistoryScreen from './ClearHistoryScreen.js';
 function App(){
   return(
     <div className="App">
-    <ClearHistoryScreen/>
-    
+    <CalculatorScreen />
     </div>
   );
 }
