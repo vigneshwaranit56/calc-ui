@@ -4,15 +4,10 @@
     height: 65%;
     left: 35%;
     top: 20%;
+    bottom: 20%;
     background: linear-gradient(180deg, #1854EF 25%, #C5D5FF 50.52%, #1B5AFB 75.08%);
     border: 1px solid #8a72cc;
     box-sizing: border-box;
     border-radius: 30px;
     }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 20px;
-    /* background-color: #2196F3; */
-    padding: 30px;
-    }
+

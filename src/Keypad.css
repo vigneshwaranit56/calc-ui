@@ -6,19 +6,25 @@
 } */
 
 .Keypad{
-    top: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    padding: 30px;
-    font-family: Rockwell;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;    font-family: Rockwell;
   font-style: normal;
   font-weight: normal;
   line-height: 40px;
-  font-size:30px ;
+  font-size:30px ;height: 15vh;
+
 }
 
 .Keypad[data-size="1"] {
     grid-template-columns: 2fr 2fr 1fr;
+    padding-top: 20%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 

@@ -64,7 +64,6 @@ console.log(value);
             case 'Auto Replay':
                 if(this.state.operand1 === "")
                 break;
-
                 this.setState({result:this.state.operand1+" "+this.convert(this.state.operation)+" "+this.state.operand2})
                 break;
             case '*':
@@ -135,53 +134,47 @@ return val;
 }
     render(){
         
-        return (
+    return (
             
-        <div class='Calculator'>
-            
-            <Display model ={this.state}/> 
-            <div>
-            <Keypad size ="1">
-            <Button onClick={this.handleClick} label="CHECK"  size ="2" value="check"/>
-        <Button onClick={this.handleClick} label="Correct Delete" size ="2" value="Correct Delete"/>
-        <Button onClick={this.handleClick} label="Replay" size ="1" value="Auto Replay"/>   
-            </Keypad>  
-            </div>
-            
+    <div class='Calculator'>
 
+        <Display model ={this.state}/> 
 
+        <Keypad size ="1">
+                <Button onClick={this.handleClick} label="CHECK"  size ="2" value="check"/>
+                <Button onClick={this.handleClick} label="Correct Delete" size ="2" value="Correct Delete"/>
+                <Button onClick={this.handleClick} label="Replay" size ="1" value="Auto Replay"/>   
+        </Keypad>             
         <Keypad>  
+                <Button onClick={this.handleClick} label="1" value="1"/>
+                <Button onClick={this.handleClick} label="2" value="2"/>
+                <Button onClick={this.handleClick} label="3" value="3"/>
+                <Button onClick={this.handleClick} label="/" value="/"/>
+                <Button onClick={() =>{
+                    console.log("history");
+                    return <ClearHistoryScreen/>
+                }} size ="3" label={<i class="fas fa-history"></i>} value="history"/>
+
+                <Button onClick={this.handleClick} label="4" value="4"/>
+                <Button onClick={this.handleClick} label="5" value="5"/>
+                <Button onClick={this.handleClick} label="6" value="6"/>
+                <Button onClick={this.handleClick} label="*" value="*"/>
+                <Button onClick={this.handleClick} size ="3" label="AC" value="AC"/>
             
+                <Button onClick={this.handleClick} label="7" value="7" />
+                <Button onClick={this.handleClick} label="8" value="8" />
+                <Button onClick={this.handleClick} label="9" value="9" />
+                <Button onClick={this.handleClick} label="-" value="-" />
+                <Button onClick={this.handleClick} label="=" value="=" />
 
-        <Button onClick={this.handleClick} label="1" value="1"/>
-        <Button onClick={this.handleClick} label="2" value="2"/>
-        <Button onClick={this.handleClick} label="3" value="3"/>
-        <Button onClick={this.handleClick} label="/" value="/"/>
-        <Button onClick={() =>{
-            console.log("history");
-            return <ClearHistoryScreen/>
-        }} size ="3" label={<i class="fas fa-history"></i>} value="history"/>
-
-        <Button onClick={this.handleClick} label="4" value="4"/>
-        <Button onClick={this.handleClick} label="5" value="5"/>
-        <Button onClick={this.handleClick} label="6" value="6"/>
-        <Button onClick={this.handleClick} label="*" value="*"/>
-        <Button onClick={this.handleClick} size ="3" label="AC" value="AC"/>
+                <Button onClick={this.handleClick} label="0" value="0" />
+                <Button onClick={this.handleClick} label="00" value="00" />
+                <Button onClick={this.handleClick} label="." value="." />
+                <Button onClick={this.handleClick} label="+" value="+" />
+                <Button onClick={this.handleClick} label="%" value="%" />
+        </Keypad>
        
-        <Button onClick={this.handleClick} label="7" value="7" />
-        <Button onClick={this.handleClick} label="8" value="8" />
-        <Button onClick={this.handleClick} label="9" value="9" />
-        <Button onClick={this.handleClick} label="-" value="-" />
-        <Button onClick={this.handleClick} label="=" value="=" />
-
-        <Button onClick={this.handleClick} label="0" value="0" />
-        <Button onClick={this.handleClick} label="00" value="00" />
-        <Button onClick={this.handleClick} label="." value="." />
-        <Button onClick={this.handleClick} label="+" value="+" />
-        <Button onClick={this.handleClick} label="%" value="%" />
-
-            </Keypad>
-        </div>);
+    </div>);
     }
 }
 
