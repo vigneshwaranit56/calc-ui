@@ -5,6 +5,9 @@
     height: 80%;
 } */
 
+/* 
+number keypad 
+ */
 .Keypad{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -20,6 +23,10 @@
 
 }
 
+/*
+check correct delete and auto replay keypad
+
+*/
 .Keypad[data-size="1"] {
     grid-template-rows: 150%  ;
     grid-template-columns: 2fr 2fr 1fr;

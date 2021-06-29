@@ -1,3 +1,6 @@
+/* 
+number buttons
+*/
 .Button {
     background: #cad2c5;
     display: flex;
@@ -35,18 +38,25 @@
         */
 
 }
-
+/* 
+Replay button
+*/
 .Button[data-size="1"] {
     font-size: 16px;
 
     background: #0DFF16;
 }
-
+/* 
+check and correct/delete  button
+*/
 .Button[data-size="2"] {
     font-size: 16px;
 
     background: #EC3232;
 }
+/* 
+AC and history button
+*/
 .Button[data-size="3"] {
     background: #EC3232;
 }
