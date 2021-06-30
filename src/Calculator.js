@@ -3,7 +3,6 @@ import './Calculator.css';
 import Display from './Display.js'
 import Keypad from './Keypad.js'
 import Button from './Button.js'
-import ClearHistoryScreen from './ClearHistoryScreen';
 
 
 
@@ -136,7 +135,7 @@ return val;
         
     return (
             
-    <div class='Calculator'>
+    <div data-size={this.props.size} class='Calculator'>
 
         <Display model ={this.state}/> 
 
@@ -150,10 +149,8 @@ return val;
                 <Button onClick={this.handleClick} label="2" value="2"/>
                 <Button onClick={this.handleClick} label="3" value="3"/>
                 <Button onClick={this.handleClick} label="/" value="/"/>
-                <Button onClick={() =>{
-                    console.log("history");
-                    return <ClearHistoryScreen/>
-                }} size ="3" label={<i class="fas fa-history"></i>} value="history"/>
+                <Button onClick={this.props.onHistory
+                } size ="3" label={<i class="fas fa-history"></i>} value="history"/>
 
                 <Button onClick={this.handleClick} label="4" value="4"/>
                 <Button onClick={this.handleClick} label="5" value="5"/>

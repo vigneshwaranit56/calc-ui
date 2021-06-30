@@ -14,3 +14,7 @@ Calculator background
     border-radius: 30px;
     }
 
+.Calculator[data-size="1"] {
+    left: 15%;
+
+}
