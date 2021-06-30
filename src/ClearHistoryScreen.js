@@ -17,6 +17,7 @@ class ClearHistoryScreen extends React.Component{
     }
 
   async componentDidMount(){
+     console.log(this.props)
   const url ="https://calculate-application-django.herokuapp.com/api/calculation";
   const response = await fetch(url);
 
@@ -94,7 +95,7 @@ this.setState({data: items, loading: false });
                      <button onClick={()=> this.deleteall()}>ClearHistory</button>
                    
                      <div>
-                      <i class="fas fa-arrow-alt-circle-left"></i>
+                      <i class="fas fa-arrow-alt-circle-left" onClick={this.props.onBack}></i>
                      </div>
                 
                      </div>

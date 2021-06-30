@@ -8,10 +8,9 @@ class CalculatorScreen extends Component{
         super(props);
         this.changeScreen = this.changeScreen.bind(this);
         this.backToCalculator = this.backToCalculator.bind(this);
-
       }
     state={
-        isClearHistoryScreen : true
+        isClearHistoryScreen : false
     }
     changeScreen(){
         if(this.state.isClearHistoryScreen){
@@ -32,10 +31,10 @@ class CalculatorScreen extends Component{
         return (<div class='Background'>
             
         {
-                ((this.isClearHistoryScreen) ?   
+                ((this.state.isClearHistoryScreen) ?   
                 <div>
-                    <Calculator size="1" onBack= {this.backToCalculator}/> 
-                    <ClearHistoryScreen />
+                    <Calculator size="1" /> 
+                    <ClearHistoryScreen  onBack= {this.backToCalculator}/>
                 </div>  
                 : 
                 <Calculator onHistory ={this.changeScreen}/> )                  
